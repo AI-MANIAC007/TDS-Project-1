@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 client = OpenAI(
-    api_key=os.environ.get(AIPROXY_TOKEN),
+    api_key=os.environ.get("AIPROXY_TOKEN"),
     base_url="https://aiproxy.sanand.workers.dev/openai/v1"
 )
 
